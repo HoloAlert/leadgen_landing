@@ -1,26 +1,146 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Brand Core */
+  --color-black: #171717;
+  --color-gray: #787878;
+  --color-black-5: #17171780;
+  --color-black-7: #171717b3;
+  --color-blue: #4294d8;
+  --color-orange: #f46036;
+  --color-promo: #45b864;
+
+  /* Borders & Surfaces */
+  --color-border: #d9d9d9;
+  --color-border-subtle: #0000001a;
+  --color-surface: #f2f2f2;
+  --color-scrim: #00000026;
+
+  /* Semantic */
+  --color-risk: #f45b69;
+  --color-risk-light: #fef0f1;
+  --color-risk-border: #f5b5ba;
+
+  --font-body: var(--font-instrument-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Base ─── */
+:root {
+  color-scheme: light only;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ffffff;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), sans-serif;
+  color: var(--color-black);
+  background-color: #ffffff;
+  line-height: 1.3;
+  font-size: 16px;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-wrap: pretty;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ─── Section wrapper ─── */
+.section-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.section-narrow {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .section-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* ─── FAQ accordion ─── */
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.faq-answer > div {
+  overflow: hidden;
+}
+
+.faq-item.open .faq-answer {
+  grid-template-rows: 1fr;
+}
+
+.faq-item.open .faq-chevron {
+  transform: rotate(180deg);
+}
+
+/* ─── Scroll-triggered reveals ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-d1 { transition-delay: 0.06s; }
+.reveal-d2 { transition-delay: 0.12s; }
+.reveal-d3 { transition-delay: 0.18s; }
+.reveal-d4 { transition-delay: 0.24s; }
+.reveal-d5 { transition-delay: 0.30s; }
+.reveal-d6 { transition-delay: 0.36s; }
+.reveal-d7 { transition-delay: 0.42s; }
+
+/* ─── Hero entry (immediate, not scroll-dependent) ─── */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-enter {
+  opacity: 0;
+  animation: heroFadeUp 0.6s ease forwards;
+}
+
+.hero-enter-1 { animation-delay: 0.05s; }
+.hero-enter-2 { animation-delay: 0.12s; }
+.hero-enter-3 { animation-delay: 0.20s; }
+.hero-enter-4 { animation-delay: 0.30s; }
+
+/* ─── Subtle grid pattern (CSS only) ─── */
+.bg-dotgrid {
+  background-image: radial-gradient(circle, var(--color-border) 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+}
+
+/* ─── Step connector line ─── */
+.step-connector {
+  position: absolute;
+  top: 36px;
+  left: calc(33.33% + 36px);
+  right: calc(33.33% + 36px);
+  height: 1px;
+  background: var(--color-border);
+}
+
+@media (max-width: 640px) {
+  .step-connector { display: none; }
 }
