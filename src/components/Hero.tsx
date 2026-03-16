@@ -148,8 +148,14 @@ export function Hero() {
             at home and on the go - at a fraction of the usual cost.
           </p>
 
+          {/* Speed badge */}
+          <div className="hero-enter hero-enter-4 inline-flex items-center gap-2 bg-[#f4f7f5] border border-[#d6e4da] text-[#3a5a40] text-[14px] font-medium px-4 py-2 rounded-full mt-6">
+            <span className="text-[#e08a3a] text-[16px] leading-none">⚡</span>
+            Protected in under 10 minutes — delivered, charged, and ready to wear
+          </div>
+
           {/* CTA */}
-          <div className="hero-enter hero-enter-4 mt-10">
+          <div className="hero-enter hero-enter-5 mt-10">
             <CtaButton location="hero" />
           </div>
         </div>

@@ -48,7 +48,7 @@ export function Features() {
               Protection That Goes Where You Go
             </h2>
             <p className="text-[15px] text-gray mt-5 max-w-[480px] mx-auto leading-[1.55]">
-              Most alert systems tie you to your home. The Holo Pro works{" "}
+              Most alert systems tie you to your home. Holo Alert works{" "}
               <strong className="text-black font-semibold">anywhere in Canada</strong> - no base station, no landline, no Wi-Fi.
             </p>
           </ScrollReveal>
