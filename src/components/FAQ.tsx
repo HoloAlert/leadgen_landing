@@ -29,10 +29,6 @@ const faqs = [
     q: "Does it work in my area?",
     a: "Yes. Holo Alert works anywhere in Canada through nationwide cellular networks, including most rural communities. If you'd like to confirm coverage in your exact location, call us and we'll check right away.",
   },
-  {
-    q: "I have a pacemaker. Is it safe to use?",
-    a: "Yes. The device uses low-power cellular and GPS technology that does not interfere with pacemakers or other implanted medical devices. Consult your doctor if you have specific concerns.",
-  },
 ];
 
 export function FAQ() {
