@@ -35,7 +35,7 @@ export function CostComparison() {
                 Assisted Living Facility
               </h3>
               <p className="text-[14px] text-gray leading-[1.55] mb-6">
-                After a fall with no safety system, families often determine it&apos;s no longer safe for you to live alone.
+                After a serious fall with no safety system, families often decide it&apos;s no longer safe for you to live alone.
               </p>
               {/* Stat callout - heavy/oversized */}
               <div className="font-bold text-[42px] max-sm:text-[32px] text-risk leading-none tracking-[-0.02em]">
@@ -62,7 +62,7 @@ export function CostComparison() {
                 Stay in Your Own Home
               </h3>
               <p className="text-[14px] text-gray leading-[1.55] mb-6">
-                A medical alert device proves you have protection - giving your family confidence that help is always within reach.
+                A medical alert device shows your family you&apos;re protected - and that help is always within reach.
               </p>
               {/* Stat callout - heavy/oversized */}
               <div className="font-bold text-[42px] max-sm:text-[32px] text-promo leading-none tracking-[-0.02em]">
@@ -91,9 +91,9 @@ export function CostComparison() {
         <ScrollReveal>
           <p className="section-narrow pt-8 text-[15px] text-gray text-center leading-[1.65]">
             A medical alert device isn&apos;t just about emergencies - it&apos;s{" "}
-            <strong className="text-black font-semibold">proof of independence.</strong> It shows
+            <strong className="text-black font-semibold">proof you can live safely on your own.</strong> It shows
             your family, your doctor, and yourself that you&apos;ve taken the
-            steps to live safely on your own. It&apos;s the most affordable way to
+            right steps. It&apos;s the most affordable way to
             keep doing what matters most:{" "}
             <strong className="text-black font-semibold">
               living life on your terms, in your own home.

@@ -42,7 +42,7 @@ export function Testimonials() {
         <div className="section-narrow text-center">
           <ScrollReveal>
             <span className="font-semibold text-[11px] tracking-[1.8px] uppercase text-blue block mb-4">
-              Real Canadians. Real Stories.
+              From Real Canadians
             </span>
             <h2 className="font-semibold text-black leading-[1.12] tracking-[-0.015em] text-[clamp(28px,3.5vw,40px)]">
               Trusted Across Canada

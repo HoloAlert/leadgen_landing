@@ -3,7 +3,7 @@ import { ScrollReveal } from "./ScrollReveal";
 
 const trustItems = [
   { stat: "1,000+", label: "Canadians Protected" },
-  { stat: "4.9", label: "Customer Satisfaction", hasStar: true },
+  { stat: "4.9", label: "Customer Rating", hasStar: true },
   { stat: "100%", label: "Canada-Based Support" },
   { stat: "10-Day", label: "Risk-Free Trial" },
 ];

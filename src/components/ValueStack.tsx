@@ -60,10 +60,10 @@ export function ValueStack() {
             <h2 className="font-semibold text-black leading-[1.12] tracking-[-0.015em] text-[clamp(28px,3.5vw,40px)]">
               Everything You Need.
               <br />
-              One Simple Program.
+              One Simple Plan.
             </h2>
             <p className="text-[15px] text-gray mt-5 max-w-[460px] mx-auto leading-[1.55]">
-              No hidden fees. No contracts. No complicated setup. Here&apos;s what qualified members receive:
+              No hidden fees. No contracts. No complicated setup. Here&apos;s everything that&apos;s included:
             </p>
           </ScrollReveal>
         </div>
@@ -146,11 +146,11 @@ export function ValueStack() {
                   Limited Availability
                 </h4>
                 <p className="text-[14px] text-black-7 leading-[1.55]">
-                  We subsidize the device cost for seniors who qualify through our Safe Living Program. Due to the subsidy,{" "}
+                  Because we subsidize the device cost,{" "}
                   <strong className="text-black font-semibold">
-                    we can only approve a limited number of applicants each month.
+                    we can only accept a limited number of new members each month.
                   </strong>{" "}
-                  Your assessment results have qualified you - but spots fill quickly.
+                  Your assessment results have qualified you - but spots do fill up.
                 </p>
               </div>
             </div>

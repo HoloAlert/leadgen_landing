@@ -19,7 +19,7 @@ export function CtaButton({ location = "hero" }: { location?: string }) {
         <ArrowRight size={16} strokeWidth={1.5} className="transition-transform duration-200 group-hover:translate-x-0.5" />
       </button>
       <span className="block mt-3 text-[13px] text-gray">
-        Or call directly:{" "}
+        Prefer to talk? Call us:{" "}
         <strong className="text-black font-semibold">1-888-411-4656</strong>
       </span>
       <DeviceModal open={modalOpen} onClose={() => setModalOpen(false)} />

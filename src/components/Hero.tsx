@@ -145,7 +145,7 @@ export function Hero() {
           <p className="hero-enter hero-enter-3 text-[17px] text-gray max-w-[500px] mt-6 leading-[1.5]">
             You&apos;ve completed your assessment and qualified for our
             subsidized protection program. Everything you need to stay safe
-            at home and on the go - for a fraction of the market price.
+            at home and on the go - at a fraction of the usual cost.
           </p>
 
           {/* CTA */}

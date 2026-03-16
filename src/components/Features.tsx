@@ -5,12 +5,12 @@ const features = [
   {
     icon: <Crosshair size={20} className="text-blue" strokeWidth={1.5} />,
     title: "GPS Location Tracking",
-    desc: "Responders find you fast, even if you're unsure of your location.",
+    desc: "Responders find you fast - even if you don't know exactly where you are.",
   },
   {
     icon: <Droplets size={20} className="text-blue" strokeWidth={1.5} />,
     title: "Water-Resistant",
-    desc: "Wear it in the shower, in the rain, or during daily activities.",
+    desc: "Wear it in the shower, in the rain, or out on a walk.",
   },
   {
     icon: <BatteryMedium size={20} className="text-blue" strokeWidth={1.5} />,
@@ -25,12 +25,12 @@ const features = [
   {
     icon: <MessageCircle size={20} className="text-blue" strokeWidth={1.5} />,
     title: "Two-Way Voice",
-    desc: "Talk directly to trained operators through your device.",
+    desc: "Speak directly with a trained operator through your device.",
   },
   {
     icon: <ShieldCheck size={20} className="text-blue" strokeWidth={1.5} />,
     title: "Automatic Fall Detection",
-    desc: "Calls for help even if you can't press the button.",
+    desc: "Gets you help even when you can't press the button.",
   },
 ];
 
@@ -42,14 +42,14 @@ export function Features() {
         <div className="section-narrow text-center">
           <ScrollReveal>
             <span className="font-semibold text-[11px] tracking-[1.8px] uppercase text-blue block mb-4">
-              Built for Your Life
+              Built for Real Life
             </span>
             <h2 className="font-semibold text-black leading-[1.12] tracking-[-0.015em] text-[clamp(28px,3.5vw,40px)]">
               Protection That Goes Where You Go
             </h2>
             <p className="text-[15px] text-gray mt-5 max-w-[480px] mx-auto leading-[1.55]">
-              Traditional alert systems only work at home. The Holo Pro works{" "}
-              <strong className="text-black font-semibold">anywhere in Canada</strong> - no base station, no landline required.
+              Most alert systems tie you to your home. The Holo Pro works{" "}
+              <strong className="text-black font-semibold">anywhere in Canada</strong> - no base station, no landline, no Wi-Fi.
             </p>
           </ScrollReveal>
         </div>

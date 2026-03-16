@@ -5,17 +5,17 @@ const steps = [
   {
     icon: <CircleDot size={24} className="text-blue" strokeWidth={1.5} />,
     title: "Press the Button",
-    desc: "In an emergency, press the button on your device - or let automatic fall detection do it for you.",
+    desc: "Press the button on your device. If you can't, automatic fall detection does it for you.",
   },
   {
     icon: <Headset size={24} className="text-blue" strokeWidth={1.5} />,
     title: "Instant Response",
-    desc: "Our 24/7 Canadian response team answers immediately and speaks with you through the device.",
+    desc: "Our 24/7 Canadian response team answers right away and speaks with you through the device.",
   },
   {
     icon: <Ambulance size={24} className="text-blue" strokeWidth={1.5} />,
     title: "Help Arrives",
-    desc: "We contact your family, neighbours, and if needed, send emergency services to your GPS location.",
+    desc: "We contact your family and neighbours - and if needed, dispatch emergency services to your exact location.",
   },
 ];
 

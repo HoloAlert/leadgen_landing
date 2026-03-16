@@ -23,11 +23,11 @@ export function FinalCta() {
               Get Started Today
             </span>
             <h2 className="font-semibold text-black leading-[1.12] tracking-[-0.015em] text-[clamp(28px,3.5vw,40px)]">
-              Ready to Stay Safe &amp; Independent?
+              Ready to Stay Safe in Your Own Home?
             </h2>
             <p className="text-[15px] text-gray mt-5 max-w-[440px] mx-auto leading-[1.55]">
-              You&apos;ve qualified for the Safe Living Protection Program. Claim
-              your spot before this month&apos;s approved applications are filled.
+              You&apos;ve qualified for the Safe Living Protection Plan. Claim
+              your spot before this month&apos;s openings are filled.
             </p>
           </ScrollReveal>
           <ScrollReveal>
@@ -42,7 +42,7 @@ export function FinalCta() {
                 <ArrowRight size={16} strokeWidth={1.5} className="transition-transform duration-200 group-hover:translate-x-0.5" />
               </button>
               <span className="block mt-3 text-[13px] text-gray">
-                Or call directly:{" "}
+                Prefer to talk? Call us:{" "}
                 <strong className="text-black font-semibold">1-888-411-4656</strong>
               </span>
             </div>

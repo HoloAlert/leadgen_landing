@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "How much does it cost?",
-    a: 'The Safe Living Protection Program starts at just <strong>$49.95</strong>, including the device, monitoring, fall detection, shipping, and setup. The device itself (a $300–$500 value) is included at no extra cost for qualified members. Your plan renews monthly and you can cancel anytime - no contracts or cancellation fees.',
+    a: 'The Safe Living Protection Plan starts at just <strong>$49.95/month</strong> - that includes the device, monitoring, fall detection, shipping, and setup. The device itself (a $300–$500 value) is included at no extra cost for qualified members. Your plan renews monthly and you can cancel anytime - no contracts or cancellation fees.',
   },
   {
     q: "Do I need a landline or smartphone?",
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "Is it hard to set up?",
-    a: "Not at all. The device arrives ready to use - just charge it and put it on. Our team will call you to walk through everything step by step. Most people are up and running in under 10 minutes.",
+    a: "Not at all. The device arrives ready to go - just charge it and put it on. Our team will call you to walk through everything step by step. Most people are up and running in under 10 minutes.",
   },
   {
     q: "What happens if I fall?",
@@ -50,10 +50,10 @@ export function FAQ() {
         <div className="section-narrow text-center">
           <ScrollReveal>
             <span className="font-semibold text-[11px] tracking-[1.8px] uppercase text-blue block mb-4">
-              Common Questions
+              Have Questions?
             </span>
             <h2 className="font-semibold text-black leading-[1.12] tracking-[-0.015em] text-[clamp(28px,3.5vw,40px)]">
-              Frequently Asked Questions
+              We Have Answers
             </h2>
           </ScrollReveal>
         </div>
