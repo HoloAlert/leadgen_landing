@@ -1,3 +1,4 @@
+import { Star } from "lucide-react";
 import { ScrollReveal } from "./ScrollReveal";
 
 const testimonials = [
@@ -27,9 +28,7 @@ function Stars() {
   return (
     <div className="flex gap-0.5 mb-4">
       {[...Array(5)].map((_, i) => (
-        <svg key={i} width="14" height="14" viewBox="0 0 14 14" fill="#F5A623">
-          <path d="M7 1l1.76 3.57 3.94.57-2.85 2.78.67 3.93L7 10.07l-3.52 1.78.67-3.93L1.3 5.14l3.94-.57L7 1z" />
-        </svg>
+        <Star key={i} size={14} className="text-[#F5A623] fill-[#F5A623]" />
       ))}
     </div>
   );
@@ -37,9 +36,9 @@ function Stars() {
 
 export function Testimonials() {
   return (
-    <section className="py-[120px] max-sm:py-20 bg-surface/50">
+    <section className="py-[100px] max-sm:py-16 bg-surface/50">
       <div className="section-wrap">
-        {/* Header — narrow, centered */}
+        {/* Header - narrow, centered */}
         <div className="section-narrow text-center">
           <ScrollReveal>
             <span className="font-semibold text-[11px] tracking-[1.8px] uppercase text-blue block mb-4">
@@ -51,11 +50,11 @@ export function Testimonials() {
           </ScrollReveal>
         </div>
 
-        {/* Testimonial grid — wider */}
+        {/* Testimonial grid - wider */}
         <div className="grid grid-cols-2 gap-8 mt-16 max-w-[960px] mx-auto max-sm:grid-cols-1">
           {testimonials.map((t, i) => (
             <ScrollReveal key={t.author} delay={i + 1}>
-              <div className="bg-white border border-border rounded-lg p-8 relative h-full">
+              <div className="bg-white border border-border rounded-lg p-10 max-sm:p-8 relative h-full">
                 {/* Decorative quote mark */}
                 <span className="absolute top-5 right-6 text-[52px] text-blue/10 leading-none font-bold select-none">
                   &rdquo;

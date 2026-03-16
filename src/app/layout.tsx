@@ -11,7 +11,7 @@ const instrumentSans = Instrument_Sans({
 export const metadata: Metadata = {
   title: "Safe Living Protection Program | Holo Alert",
   description:
-    "You've qualified for our subsidized protection program. Everything you need to stay safe at home and on the go — for a fraction of the market price.",
+    "You've qualified for our subsidized protection program. Everything you need to stay safe at home and on the go - for a fraction of the market price.",
 };
 
 export default function RootLayout({

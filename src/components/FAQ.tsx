@@ -1,16 +1,17 @@
 "use client";
 
 import { useCallback } from "react";
+import { ChevronDown } from "lucide-react";
 import { ScrollReveal } from "./ScrollReveal";
 
 const faqs = [
   {
     q: "Is there a contract or commitment?",
-    a: 'No long-term contracts. You can cancel anytime. Plus, you get a <strong>10-day risk-free trial</strong> — if it\'s not right for you, just send it back.',
+    a: 'No long-term contracts. You can cancel anytime. Plus, you get a <strong>10-day risk-free trial</strong> - if it\'s not right for you, just send it back.',
   },
   {
     q: "How much does it cost?",
-    a: 'The Safe Living Protection Program starts at just <strong>$49.95</strong>, including the device, monitoring, fall detection, shipping, and setup. The device itself (a $300–$500 value) is included at no extra cost for qualified members. Your plan renews monthly and you can cancel anytime — no contracts or cancellation fees.',
+    a: 'The Safe Living Protection Program starts at just <strong>$49.95</strong>, including the device, monitoring, fall detection, shipping, and setup. The device itself (a $300–$500 value) is included at no extra cost for qualified members. Your plan renews monthly and you can cancel anytime - no contracts or cancellation fees.',
   },
   {
     q: "Do I need a landline or smartphone?",
@@ -18,11 +19,11 @@ const faqs = [
   },
   {
     q: "Is it hard to set up?",
-    a: "Not at all. The device arrives ready to use — just charge it and put it on. Our team will call you to walk through everything step by step. Most people are up and running in under 10 minutes.",
+    a: "Not at all. The device arrives ready to use - just charge it and put it on. Our team will call you to walk through everything step by step. Most people are up and running in under 10 minutes.",
   },
   {
     q: "What happens if I fall?",
-    a: "The device automatically detects the fall and connects you to our 24/7 Canadian monitoring centre. A trained operator speaks with you through the device, assesses the situation, and dispatches help — your emergency contacts, neighbours, or local 911 — to your GPS location.",
+    a: "The device automatically detects the fall and connects you to our 24/7 Canadian monitoring centre. A trained operator speaks with you through the device, assesses the situation, and dispatches help - your emergency contacts, neighbours, or local 911 - to your GPS location.",
   },
   {
     q: "Does it work in my area?",
@@ -43,9 +44,9 @@ export function FAQ() {
   }, []);
 
   return (
-    <section className="py-[120px] max-sm:py-20" id="faq">
+    <section className="py-[100px] max-sm:py-16" id="faq">
       <div className="section-wrap">
-        {/* Header — narrow, centered */}
+        {/* Header - narrow, centered */}
         <div className="section-narrow text-center">
           <ScrollReveal>
             <span className="font-semibold text-[11px] tracking-[1.8px] uppercase text-blue block mb-4">
@@ -57,7 +58,7 @@ export function FAQ() {
           </ScrollReveal>
         </div>
 
-        {/* FAQ list — wider */}
+        {/* FAQ list - wider */}
         <ScrollReveal>
           <div className="mt-16 max-w-[960px] mx-auto">
             {faqs.map((faq, i) => (
@@ -68,18 +69,12 @@ export function FAQ() {
                 }`}
               >
                 <button
-                  className="w-full bg-transparent border-none py-6 text-[16px] font-medium text-black cursor-pointer text-left flex justify-between items-center gap-8 hover:text-blue transition-colors duration-200"
+                  className="w-full bg-transparent border-none py-6 text-[16px] font-medium text-black cursor-pointer text-left flex justify-between items-center gap-8 max-sm:gap-4 hover:text-blue transition-colors duration-200"
                   onClick={handleToggle}
                   data-faq-question={faq.q}
                 >
                   <span>{faq.q}</span>
-                  <svg
-                    className="faq-chevron w-4 h-4 shrink-0 transition-transform duration-300 text-blue"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                  >
-                    <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
+                  <ChevronDown className="faq-chevron w-4 h-4 shrink-0 transition-transform duration-300 text-blue" strokeWidth={1.5} />
                 </button>
                 <div className="faq-answer">
                   <div>

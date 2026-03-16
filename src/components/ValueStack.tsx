@@ -1,3 +1,4 @@
+import { Clock } from "lucide-react";
 import { CtaButton } from "./CtaButton";
 import { ScrollReveal } from "./ScrollReveal";
 
@@ -16,13 +17,13 @@ const items = [
   },
   {
     title: "Automatic Fall Detection",
-    desc: "Many companies charge extra — included free with your program",
+    desc: "Many companies charge extra - included free with your program",
     oldPrice: "$180/year",
     newPrice: "FREE",
   },
   {
     title: "Free Setup & Activation",
-    desc: "Device arrives ready to use — no technician visit needed",
+    desc: "Device arrives ready to use - no technician visit needed",
     oldPrice: "$50",
     newPrice: "FREE",
   },
@@ -34,13 +35,13 @@ const items = [
   },
   {
     title: "Lifetime Device Protection Guarantee",
-    desc: "If your device ever stops working, we replace it — free",
+    desc: "If your device ever stops working, we replace it - free",
     oldPrice: "$300+",
     newPrice: "INCLUDED",
   },
   {
     title: "10-Day Risk-Free Home Trial",
-    desc: "Try it with zero risk — if it's not right for you, send it back",
+    desc: "Try it with zero risk - if it's not right for you, send it back",
     oldPrice: null,
     newPrice: "INCLUDED",
   },
@@ -48,9 +49,9 @@ const items = [
 
 export function ValueStack() {
   return (
-    <section className="py-[120px] max-sm:py-20 bg-surface/50" id="program">
+    <section className="py-[100px] max-sm:py-16 bg-surface/50" id="program">
       <div className="section-wrap">
-        {/* Header — narrow, centered */}
+        {/* Header - narrow, centered */}
         <div className="section-narrow text-center">
           <ScrollReveal>
             <span className="font-semibold text-[11px] tracking-[1.8px] uppercase text-blue block mb-4">
@@ -67,13 +68,13 @@ export function ValueStack() {
           </ScrollReveal>
         </div>
 
-        {/* Value Stack Items — wider container */}
+        {/* Value Stack Items - wider container */}
         <ScrollReveal>
           <div className="mt-16 max-w-[960px] mx-auto">
             {items.map((item, i) => (
               <div
                 key={item.title}
-                className="flex items-start justify-between py-5 border-b border-border last:border-b-0 max-sm:flex-col max-sm:gap-2"
+                className={`flex items-start justify-between py-5 border-b border-border last:border-b-0 max-sm:flex-col max-sm:gap-2 ${i === 0 ? "border-t" : ""}`}
               >
                 <div className="flex items-start gap-4 flex-1 min-w-0">
                   <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-blue text-white font-bold text-[11px] shrink-0 mt-0.5">
@@ -101,7 +102,7 @@ export function ValueStack() {
           </div>
         </ScrollReveal>
 
-        {/* Price Comparison — wider */}
+        {/* Price Comparison - wider */}
         <ScrollReveal>
           <div className="mt-16 max-w-[960px] mx-auto">
             <div className="grid grid-cols-2 max-sm:grid-cols-1 overflow-hidden rounded-lg">
@@ -109,7 +110,7 @@ export function ValueStack() {
                 <div className="text-[11px] uppercase tracking-[1.2px] text-gray font-semibold">
                   Total Market Value
                 </div>
-                <div className="font-bold text-[48px] text-risk mt-3 leading-none tracking-[-0.02em]">
+                <div className="font-bold text-[48px] max-sm:text-[36px] text-risk mt-3 leading-none tracking-[-0.02em]">
                   <s>$900+</s>
                 </div>
               </div>
@@ -118,13 +119,13 @@ export function ValueStack() {
                   Your Program Price
                 </div>
                 <div className="text-[13px] mt-2 opacity-70">Starting as low as</div>
-                <div className="font-bold text-[48px] text-white mt-1 leading-none tracking-[-0.02em]">
+                <div className="font-bold text-[48px] max-sm:text-[36px] text-white mt-1 leading-none tracking-[-0.02em]">
                   $49.95
                 </div>
               </div>
             </div>
             <p className="text-center text-[12px] text-gray mt-4">
-              Renews monthly. Cancel anytime — no contracts.
+              Renews monthly. Cancel anytime - no contracts.
             </p>
           </div>
         </ScrollReveal>
@@ -138,11 +139,8 @@ export function ValueStack() {
         {/* Urgency */}
         <ScrollReveal>
           <div className="mt-14 max-w-[960px] mx-auto">
-            <div className="flex items-start gap-5 py-6 px-8 border border-orange/20 rounded-lg bg-orange/[0.03]">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0 mt-1">
-                <circle cx="10" cy="10" r="8" stroke="#f46036" strokeWidth="1.5" />
-                <path d="M10 6v4l2.5 2.5" stroke="#f46036" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+            <div className="flex items-start gap-5 py-6 px-8 max-sm:px-5 max-sm:py-5 border border-orange/20 rounded-lg bg-orange/[0.03]">
+              <Clock size={20} className="text-orange shrink-0 mt-1" strokeWidth={1.5} />
               <div>
                 <h4 className="font-semibold text-orange text-[15px] mb-2">
                   Limited Availability
@@ -152,7 +150,7 @@ export function ValueStack() {
                   <strong className="text-black font-semibold">
                     we can only approve a limited number of applicants each month.
                   </strong>{" "}
-                  Your assessment results have qualified you — but spots fill quickly.
+                  Your assessment results have qualified you - but spots fill quickly.
                 </p>
               </div>
             </div>

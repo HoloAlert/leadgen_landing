@@ -1,9 +1,16 @@
+"use client";
+
+import { useState } from "react";
+import { ArrowRight } from "lucide-react";
 import { ScrollReveal } from "./ScrollReveal";
+import { DeviceModal } from "./DeviceModal";
 
 export function FinalCta() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <section
-      className="relative py-[120px] max-sm:py-20 bg-surface/50 overflow-hidden"
+      className="relative py-[100px] max-sm:py-16 bg-surface/50 overflow-hidden"
       id="claim"
     >
       {/* Dot grid texture */}
@@ -12,6 +19,9 @@ export function FinalCta() {
       <div className="section-wrap relative z-10">
         <div className="section-narrow text-center">
           <ScrollReveal>
+            <span className="font-semibold text-[11px] tracking-[1.8px] uppercase text-blue block mb-4">
+              Get Started Today
+            </span>
             <h2 className="font-semibold text-black leading-[1.12] tracking-[-0.015em] text-[clamp(28px,3.5vw,40px)]">
               Ready to Stay Safe &amp; Independent?
             </h2>
@@ -22,17 +32,15 @@ export function FinalCta() {
           </ScrollReveal>
           <ScrollReveal>
             <div className="mt-12">
-              <a
-                href="https://www.holoalert.ca/safe-living"
+              <button
+                onClick={() => setModalOpen(true)}
                 className="group inline-flex items-center gap-2 bg-promo text-white font-semibold text-[15px] px-8 py-[14px] rounded-md cursor-pointer shadow-[0_2px_12px_rgba(69,184,100,0.25)] tracking-[0.3px] hover:translate-y-[-1px] hover:shadow-[0_4px_20px_rgba(69,184,100,0.35)] active:translate-y-0 transition-[transform,box-shadow] duration-200 max-sm:w-full max-sm:justify-center"
                 data-cta-text="Claim Your Protection Plan"
                 data-cta-location="final-cta"
               >
                 Claim Your Protection Plan
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="transition-transform duration-200 group-hover:translate-x-0.5">
-                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </a>
+                <ArrowRight size={16} strokeWidth={1.5} className="transition-transform duration-200 group-hover:translate-x-0.5" />
+              </button>
               <span className="block mt-3 text-[13px] text-gray">
                 Or call directly:{" "}
                 <strong className="text-black font-semibold">1-888-411-4656</strong>
@@ -41,6 +49,8 @@ export function FinalCta() {
           </ScrollReveal>
         </div>
       </div>
+
+      <DeviceModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </section>
   );
 }

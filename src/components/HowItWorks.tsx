@@ -1,36 +1,19 @@
+import { CircleDot, Headset, Ambulance } from "lucide-react";
 import { ScrollReveal } from "./ScrollReveal";
 
 const steps = [
   {
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="8" stroke="#4294D8" strokeWidth="1.5" />
-        <circle cx="12" cy="12" r="4" fill="#4294D8" />
-      </svg>
-    ),
+    icon: <CircleDot size={24} className="text-blue" strokeWidth={1.5} />,
     title: "Press the Button",
-    desc: "In an emergency, press the button on your device — or let automatic fall detection do it for you.",
+    desc: "In an emergency, press the button on your device - or let automatic fall detection do it for you.",
   },
   {
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="#4294D8" strokeWidth="1.5" fill="none" />
-        <path d="M9 11a1.5 1.5 0 013 0v4M12 11a1.5 1.5 0 013 0v4" stroke="#4294D8" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="12" cy="7" r="1" fill="#4294D8" />
-      </svg>
-    ),
+    icon: <Headset size={24} className="text-blue" strokeWidth={1.5} />,
     title: "Instant Response",
     desc: "Our 24/7 Canadian response team answers immediately and speaks with you through the device.",
   },
   {
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2l-1.5 3h3L12 2z" fill="#f46036" />
-        <path d="M3 13h18M3 13l2.5-5h13l2.5 5M5 13v5a2 2 0 002 2h10a2 2 0 002-2v-5" stroke="#4294D8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-        <circle cx="7.5" cy="16" r="1" fill="#4294D8" />
-        <circle cx="16.5" cy="16" r="1" fill="#4294D8" />
-      </svg>
-    ),
+    icon: <Ambulance size={24} className="text-blue" strokeWidth={1.5} />,
     title: "Help Arrives",
     desc: "We contact your family, neighbours, and if needed, send emergency services to your GPS location.",
   },
@@ -38,9 +21,9 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-[120px] max-sm:py-20 bg-surface/50">
+    <section className="py-[100px] max-sm:py-16 bg-surface/50">
       <div className="section-wrap">
-        {/* Header — narrow, centered */}
+        {/* Header - narrow, centered */}
         <div className="section-narrow text-center">
           <ScrollReveal>
             <span className="font-semibold text-[11px] tracking-[1.8px] uppercase text-blue block mb-4">
@@ -52,7 +35,7 @@ export function HowItWorks() {
           </ScrollReveal>
         </div>
 
-        {/* Steps — wider container */}
+        {/* Steps - wider container */}
         <div className="relative mt-16 max-w-[960px] mx-auto">
           <div className="step-connector" />
 
@@ -66,7 +49,7 @@ export function HowItWorks() {
                       {i + 1}
                     </span>
                   </div>
-                  <h3 className="font-medium text-black text-[17px] mt-6 mb-3">
+                  <h3 className="font-medium text-black text-[18px] mt-6 mb-3">
                     {step.title}
                   </h3>
                   <p className="text-[14px] text-gray leading-[1.55] max-w-[280px] mx-auto">
@@ -76,6 +59,21 @@ export function HowItWorks() {
               </ScrollReveal>
             ))}
           </div>
+
+          {/* Video */}
+          <ScrollReveal delay={4}>
+            <div className="mt-16 rounded-2xl overflow-hidden border border-border bg-white shadow-sm">
+              <div className="relative w-full" style={{ padding: "56.25% 0 0 0" }}>
+                <iframe
+                  src="https://player.vimeo.com/video/1164848214?autoplay=1&loop=1&muted=1&background=1"
+                  className="absolute top-0 left-0 w-full h-full"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
